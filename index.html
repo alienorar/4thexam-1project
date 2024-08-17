@@ -46,42 +46,51 @@
                 <tbody id="result"></tbody>
             </table>
         </div>
-    </div>
-
-
-    <!-- MODAL -->
-    <div class="modal" id="student-modal">
-        <div class="modal-content">
-            <h1 class="text-center text-warning">Add Student</h1>
-            <div class="card">
-                <div class="card-body">
-                    <form>
-                        <input type="text" placeholder="First name" class="form-control my-2" name="first_name"
-                            onkeyup="handleChange(event)">
-                        <input type="text" placeholder="Last name" class="form-control my-2" name="last_name"
-                            onkeyup="handleChange(event)">
-                        <input type="email" placeholder="Email" class="form-control my-2" name="email"
-                            onkeyup="handleChange(event)">
-                        <input type="tel" placeholder="Phone number" class="form-control my-2" name="phone_number"
-                            onkeyup="handleChange(event)">
-                        <input type="date" placeholder="Date" class="form-control my-2" name="date"
-                            onchange="handleChange(event)">
-                        <input type="number" placeholder="ID" class="form-control my-2" name="id"
-                            onkeyup="handleChange(event)">
-                    </form>
-                </div>
-                <div class="card-footer">
-                    <button class="btn btn-warning btn-outline-secondary border-0 mx-1" id="save">save</button>
-                    <button class="btn btn-secondary btn-outline-warning border-0 mx-1" id="cancel">cancel</button>
+        <div class="row my-1 d-flex justify-content-lg-end align-items-end">
+            <div class="d-flex justify-content-end"><button
+                    class="btn btn-outline-secondary border-0 d-flex fs-2 align-items-center rounded-circle justify-content-center" id="prev"><i
+                        class="fa-solid fa-angle-left text-warning"></i></button>
+                <div><button
+                        class="btn d-flex fs-2  border-0 btn-outline-secondary align-items-center  rounded-circle justify-content-center " id="next"><i
+                            class="fa-solid fa-angle-right text-warning"></i></button>
                 </div>
             </div>
         </div>
-    </div>
+
+
+        <!-- MODAL -->
+        <div class="modal" id="student-modal">
+            <div class="modal-content">
+                <h1 class="text-center text-warning">Add Student</h1>
+                <div class="card">
+                    <div class="card-body">
+                        <form>
+                            <input type="text" placeholder="First name" class="form-control my-2" name="first_name"
+                                onkeyup="handleChange(event)">
+                            <input type="text" placeholder="Last name" class="form-control my-2" name="last_name"
+                                onkeyup="handleChange(event)">
+                            <input type="email" placeholder="Email" class="form-control my-2" name="email"
+                                onkeyup="handleChange(event)">
+                            <input type="tel" placeholder="Phone number" class="form-control my-2" name="phone_number"
+                                onkeyup="handleChange(event)">
+                            <input type="date" placeholder="Date" class="form-control my-2" name="date"
+                                onchange="handleChange(event)">
+                            <input type="number" placeholder="ID" class="form-control my-2" name="id"
+                                onkeyup="handleChange(event)">
+                        </form>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-warning btn-outline-secondary border-0 mx-1" id="save">save</button>
+                        <button class="btn btn-secondary btn-outline-warning border-0 mx-1" id="cancel">cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
 
 
-    <script src="./main.js"></script>
+        <script src="./main.js"></script>
 </body>
 
 </html>
